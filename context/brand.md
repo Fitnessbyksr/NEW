@@ -5,15 +5,16 @@
 ## Business Basics
 
 - **Name**: Fitnessbyksr
+- **Trainer**: Kallum Rolfe (KSR = Kallum Stuart Rolfe or similar — initials)
 - **Business/Niche**: Personal training in Manchester, UK — in-person sessions at a gym in Denton, Manchester and online coaching. Specialises in weight loss, mobility, and muscle growth. Also holds a chair-based exercise qualification for older clients.
-- **Website**: [to be added]
+- **Website**: fitnessbyksr.co.uk (existing site — rebuild planned)
 - **Email platform**: Gmail (Google)
 
 ## Goals
 
 - **In-person**: Reach 30 sessions per week at Denton gym
 - **Online**: Build to 10 active online coaching clients
-- **Location**: Denton, Manchester, UK
+- **Location**: Denton, Manchester, UK (also serves surrounding areas: Tameside, East Manchester)
 
 ## Target Customer
 
@@ -27,8 +28,9 @@
 
 ## Offer
 
-- **In-person sessions**: 50-minute 1-to-1 personal training at a gym in Denton, Manchester. Inclusive, fun, results-focused. Price: [to be added — ask KSR]
-- **Online coaching**: £200/month — includes programming, check-ins, and ongoing support (standard online coaching deliverables)
+- **In-person sessions**: 50-minute 1-to-1 personal training at a gym in Denton, Manchester. Inclusive, fun, results-focused.
+  - Pricing (internal only — do NOT advertise publicly): £35/session or £350 for 10 sessions
+- **Online coaching**: £200/month — includes programming, check-ins, and ongoing support
 - **Lead magnet**: [to be created using /lead-magnet skill]
 - **Opt-in page URL**: [to be added]
 
@@ -60,11 +62,19 @@
 
 ## Competitors
 
-- [Local PT studios and independent trainers in Denton / Tameside / East Manchester area]
-- [Online PT coaches targeting similar demographics]
-- [Budget gym chains with PT add-ons — e.g., PureGym, JD Gyms]
+- Local independent PTs in Denton, Tameside, and East Manchester
+- Budget gym chains with bolt-on PT services (PureGym, JD Gyms, Everlast Denton)
+- Online PT coaches targeting weight loss demographics nationally
 
-## Results / Proof
+## Kallum's Story
 
-- [Add specific client results here — e.g., "Client lost 2 stone in 4 months", "Client in her 60s went from chronic back pain to walking 5k"]
-- [Add your own story / what led you to become a PT]
+Kallum served as a PCSO for 2 years, then a Police Officer for 3 years. He left at the end of 2022 after struggling with his mental health, weight gain, and unhealthy habits during his time in the force. Fitness became the turning point in his recovery. He qualified as a personal trainer and launched Fitnessbyksr to help others make the same transformation — particularly people who feel like exercise isn't for them.
+
+This story is central to the brand: Kallum knows what it feels like to be in a dark place, to let your health slip, and to find your way back through movement. He doesn't judge. He's been there.
+
+## Client Results / Proof
+
+- **Weight loss**: 3 separate clients have each lost over 30kg
+- **Mobility transformation**: One older client could not get himself up off the floor due to poor health and age. He can now do push-ups, weighted squats, and gets off the floor with no issues.
+- **Mindset shift**: Multiple clients started saying they hated the idea of the gym — they now love it and look forward to every session.
+- **Google reviews**: [Paste your Google reviews here directly — copy them from your Google Business Profile and add below this line]
