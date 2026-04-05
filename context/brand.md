@@ -55,12 +55,12 @@
 
 ## Brand Voice Summary
 
-> (Filled in by /brand-voice skill — see context/brand-voice.md for full guide)
+> (Full guide in context/brand-voice.md)
 
-- **Voice in 3 words**: 
-- **Tone**: 
-- **Signature phrases**: 
-- **Never say**: 
+- **Voice in 3 words**: Genuine. Warm. Buzzing.
+- **Tone**: Casual-to-mid, highly playful, humble, plain English always — like a text from a mate who knows his stuff
+- **Signature phrases**: "Buzzing to get started," "cheers mate," "no pressure, no judgement," "feel like yourself again," "I've been there"
+- **Never say**: Shred, grind, hustle, transformation, gains, bespoke, empower, crush it, beast mode, journey
 
 ## Competitors
 
