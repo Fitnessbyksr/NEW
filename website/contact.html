@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Free Consultation | FitnessbyKSR — PT Factory, Denton Manchester</title>
+  <meta name="description" content="Book a free consultation with Kallum Rolfe at PT Factory in Denton, Manchester. No exercise, no commitment — just a chat and a look around. Or enquire about online coaching.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar" role="navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-badge" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="8" fill="#004AAD"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-weight="800" font-size="12">KSR</text>
+        </svg>
+        <span class="logo-text"><span class="fitnessby">Fitnessby</span><span class="ksr">KSR</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="free-guide.html" class="btn btn-primary nav-cta">Free 5-Day Guide</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu hidden">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="free-guide.html" class="btn btn-primary">Free 5-Day Guide</a>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Let's have a chat</h1>
+    <p>Fill in the form and I'll get back to you within 24 hours. No sales pitch. No pressure. Just a conversation about what you're looking for and whether I can help.</p>
+  </div>
+</section>
+
+<!-- ── CONTACT CONTENT ── -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Get in touch</h2>
+        <p>Whether you want to book a free consultation, ask about online coaching, or just have a question — drop me a message and I'll reply properly.</p>
+        <p>I read every message myself. No bots, no assistants.</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">PT Factory, Denton, Manchester</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value"><a href="mailto:kallum@fitnessbyksr.com" style="color:var(--blue);">kallum@fitnessbyksr.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <div class="contact-label">Instagram</div>
+              <div class="contact-value"><a href="https://www.instagram.com/fitnessbyksr" target="_blank" rel="noopener noreferrer" style="color:var(--blue);">@fitnessbyksr</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">⏰</span>
+            <div>
+              <div class="contact-label">Response time</div>
+              <div class="contact-value">Usually within a few hours, always within 24</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- What to expect -->
+        <div style="margin-top:2.5rem;padding:1.5rem;background:var(--grey);border-radius:var(--radius-sm);">
+          <h4 style="margin-bottom:1rem;">What happens at the free consultation?</h4>
+          <p style="font-size:0.9rem;">It's a 25–30 minute chat at PT Factory. No exercise, no kit needed. I'll show you around the gym, ask what you want to achieve, and we'll figure out whether working together makes sense. Most people say they leave wondering what they were so worried about.</p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h3>Send me a message</h3>
+        <p>I'll get back to you within 24 hours — usually sooner.</p>
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-first">First name *</label>
+              <input type="text" id="cf-first" name="first_name" placeholder="e.g. Sarah" required autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="cf-last">Last name</label>
+              <input type="text" id="cf-last" name="last_name" placeholder="e.g. Jones" autocomplete="family-name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email address *</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@email.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="cf-interest">What are you interested in?</label>
+            <select id="cf-interest" name="interest">
+              <option value="">Select an option...</option>
+              <option value="consultation">Free consultation (in-person, Denton)</option>
+              <option value="online">Online coaching</option>
+              <option value="question">Just a question</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Tell me a bit about what you're looking for *</label>
+            <textarea id="cf-message" name="message" placeholder="E.g. I've not exercised in a few years and I'm not sure where to start. I've got some bad experiences with gyms before and I'm a bit nervous..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit btn-lg">Send message</button>
+          <p class="form-disclaimer" style="margin-top:0.75rem;">Your details won't be shared or used for anything other than getting back to you.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NOT READY YET ── -->
+<section class="section bg-grey">
+  <div class="container text-center">
+    <h2 class="section-title">Not quite ready to get in touch?</h2>
+    <p class="section-subtitle" style="margin:0.5rem auto 2.5rem;">Start with the free guide. Five short emails, no gym visit needed. Get a feel for how I think before you commit to anything.</p>
+    <a href="free-guide.html" class="btn btn-primary btn-lg">Get the free 5-day guide</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">
+          <svg class="logo-badge" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#004AAD"/>
+            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-weight="800" font-size="12">KSR</text>
+          </svg>
+          <span class="logo-text"><span class="fitnessby">Fitnessby</span><span class="ksr">KSR</span></span>
+        </a>
+        <p>Honest fitness from a Manchester PT who's been where you are.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Kallum</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Free resources</h4>
+        <ul class="footer-links">
+          <li><a href="free-guide.html">5 Days to Not Hating the Gym</a></li>
+          <li><a href="blog-gym-anxiety.html">Gym Anxiety Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Book a free consultation</a></li>
+          <li><a href="mailto:kallum@fitnessbyksr.com">kallum@fitnessbyksr.com</a></li>
+          <li style="color:rgba(255,255,255,0.5);font-size:0.875rem;">PT Factory, Denton, Manchester</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 FitnessbyKSR. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
