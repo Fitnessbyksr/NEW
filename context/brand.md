@@ -44,12 +44,14 @@
 
 ## Positioning
 
-> (Filled in by /positioning-angle skill)
-
-- **Positioning statement**: 
-- **Unique mechanism name**: 
-- **Market category**: 
-- **Key differentiator**: 
+- **Positioning statement**: The Manchester personal trainer for people who hate the gym — and want to feel like themselves again.
+- **Big idea**: "I help people in Manchester who hate the gym — and feel like they've lost themselves — lose weight, move better, and feel good again, without intimidation or cookie-cutter plans, even if they've tried before and failed."
+- **Unique mechanism name**: The KSR Reset
+- **Market category**: Personal training for gym-anxious, weight-loss-focused adults in Greater Manchester
+- **Key differentiator**: Kallum is the only Manchester PT whose origin story (ex-police officer, mental health struggles, weight gain) mirrors the exact journey of his ideal client — and whose 24 five-star reviews are dominated by people who hated the gym and now love it.
+- **One-liner**: "The Manchester PT for people who hate the gym and want to feel like themselves again."
+- **Primary angle**: Gym-anxious adults + mental health + real results without intimidation
+- **Secondary angle**: Anti cookie-cutter / anti no-pain-no-gain culture
 
 ## Brand Voice Summary
 
