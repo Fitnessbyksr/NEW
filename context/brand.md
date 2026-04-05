@@ -31,7 +31,7 @@
 - **In-person sessions**: 50-minute 1-to-1 personal training at a gym in Denton, Manchester. Inclusive, fun, results-focused.
   - Pricing (internal only — do NOT advertise publicly): £35/session or £350 for 10 sessions
 - **Online coaching**: £200/month — includes programming, check-ins, and ongoing support
-- **Lead magnet**: [to be created using /lead-magnet skill]
+- **Lead magnet**: "5 Days to Not Hating the Gym" — free 5-day email course (see output/lead-magnet.md)
 - **Opt-in page URL**: [to be added]
 
 ## What Makes Sessions Different
