@@ -426,6 +426,37 @@ p { color: var(--text-muted); line-height: 1.75; }
 .story-content p { margin-bottom: 1rem; }
 .story-content p:last-of-type { margin-bottom: 1.5rem; }
 
+/* ── Results / Before & After ── */
+.results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.result-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin: 0;
+}
+.result-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.results-disclaimer {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 640px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── Lead Magnet / CTA Banner ── */
 .lead-magnet-section {
   background: var(--blue);
