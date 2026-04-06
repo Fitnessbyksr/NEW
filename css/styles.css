@@ -112,6 +112,13 @@ p { color: var(--text-muted); line-height: 1.75; }
   height: 40px;
   flex-shrink: 0;
 }
+.logo-img {
+  height: 44px;
+  width: auto;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  display: block;
+}
 .logo-text {
   font-size: 1.1rem;
   font-weight: 700;
@@ -426,12 +433,33 @@ p { color: var(--text-muted); line-height: 1.75; }
 .story-content p { margin-bottom: 1rem; }
 .story-content p:last-of-type { margin-bottom: 1.5rem; }
 
+/* ── Story Photo ── */
+.story-photo {
+  margin: 2.5rem auto;
+  max-width: 480px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+.story-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.story-photo figcaption {
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  background: var(--grey);
+}
+
 /* ── Results / Before & After ── */
 .results-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
 }
 .result-card {
