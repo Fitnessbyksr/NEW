@@ -192,7 +192,7 @@ In this video I want to break down what gym anxiety actually is, why it happens,
 
 **[1:30–2:00 — Credibility]**
 
-"Quick bit of background. I'm Kallum, personal trainer at PT Factory in Denton, Manchester. Before I was a PT I was a police officer for five years. Left in 2022 when my mental health was struggling. Tried the gym, quit in three weeks, eventually figured it out — and became a PT specifically to help people who are where I was."
+"Quick bit of background. I'm Kallum, personal trainer at PT Factory in Denton, Manchester. Before I was a PT I was a PCSO for two years, then a police officer for three years. Left in 2022 when my mental health was struggling. Tried the gym, quit in three weeks, eventually figured it out — and became a PT specifically to help people who are where I was."
 
 [B-ROLL: PT Factory entrance, Kallum with a client — natural, not posed]
 
