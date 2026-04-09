@@ -136,55 +136,53 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 })();
 
-// ── Results Carousel ──
+// ── Carousels (results + testimonials) ──
 (function () {
-  const carousel = document.querySelector('.results-carousel');
-  if (!carousel) return;
+  document.querySelectorAll('.results-carousel, .testimonials-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.carousel-track');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const prevBtn = carousel.querySelector('.carousel-prev');
+    const nextBtn = carousel.querySelector('.carousel-next');
+    const dotsWrap = carousel.querySelector('.carousel-dots');
+    let current = 0;
 
-  const track = carousel.querySelector('.carousel-track');
-  const slides = carousel.querySelectorAll('.carousel-slide');
-  const prevBtn = carousel.querySelector('.carousel-prev');
-  const nextBtn = carousel.querySelector('.carousel-next');
-  const dotsWrap = carousel.querySelector('.carousel-dots');
-  let current = 0;
+    function perView() { return window.innerWidth < 640 ? 1 : 2; }
+    function totalPages() { return Math.ceil(slides.length / perView()); }
 
-  function perView() { return window.innerWidth < 640 ? 1 : 2; }
-  function totalPages() { return Math.ceil(slides.length / perView()); }
-
-  function buildDots() {
-    dotsWrap.innerHTML = '';
-    for (let i = 0; i < totalPages(); i++) {
-      const btn = document.createElement('button');
-      btn.className = 'carousel-dot' + (i === current ? ' active' : '');
-      btn.setAttribute('aria-label', 'Go to page ' + (i + 1));
-      btn.addEventListener('click', () => go(i));
-      dotsWrap.appendChild(btn);
+    function buildDots() {
+      dotsWrap.innerHTML = '';
+      for (let i = 0; i < totalPages(); i++) {
+        const btn = document.createElement('button');
+        btn.className = 'carousel-dot' + (i === current ? ' active' : '');
+        btn.setAttribute('aria-label', 'Go to page ' + (i + 1));
+        btn.addEventListener('click', () => go(i));
+        dotsWrap.appendChild(btn);
+      }
     }
-  }
 
-  function go(n) {
-    current = Math.max(0, Math.min(n, totalPages() - 1));
-    const viewportWidth = track.parentElement.offsetWidth;
-    track.style.transform = 'translateX(-' + (current * viewportWidth) + 'px)';
-    prevBtn.disabled = current === 0;
-    nextBtn.disabled = current === totalPages() - 1;
-    buildDots();
-  }
+    function go(n) {
+      current = Math.max(0, Math.min(n, totalPages() - 1));
+      const viewportWidth = track.parentElement.offsetWidth;
+      track.style.transform = 'translateX(-' + (current * viewportWidth) + 'px)';
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === totalPages() - 1;
+      buildDots();
+    }
 
-  prevBtn.addEventListener('click', () => go(current - 1));
-  nextBtn.addEventListener('click', () => go(current + 1));
+    prevBtn.addEventListener('click', () => go(current - 1));
+    nextBtn.addEventListener('click', () => go(current + 1));
 
-  // Touch swipe
-  let startX = 0;
-  track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-  track.addEventListener('touchend', e => {
-    const diff = startX - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) go(diff > 0 ? current + 1 : current - 1);
-  }, { passive: true });
+    let startX = 0;
+    track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) go(diff > 0 ? current + 1 : current - 1);
+    }, { passive: true });
 
-  window.addEventListener('resize', () => go(0), { passive: true });
+    window.addEventListener('resize', () => go(0), { passive: true });
 
-  go(0);
+    go(0);
+  });
 })();
 
 // ── Intersection Observer for fade-in ──

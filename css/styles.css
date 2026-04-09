@@ -564,6 +564,16 @@ p { color: var(--text-muted); line-height: 1.75; }
   .carousel-next { right: 4px; }
 }
 
+/* ── Testimonials Carousel ── */
+.testimonials-carousel .carousel-slide {
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+.testimonials-carousel .testimonial-card {
+  height: 100%;
+  margin: 0;
+}
+
 /* ── Lead Magnet / CTA Banner ── */
 .lead-magnet-section {
   background: var(--blue);
