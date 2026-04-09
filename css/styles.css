@@ -1060,3 +1060,132 @@ p { color: var(--text-muted); line-height: 1.75; }
   .trust-divider { display: none; }
   .trust-strip-inner { justify-content: flex-start; overflow-x: auto; padding: 0 1rem; flex-wrap: nowrap; }
 }
+
+/* ── Cookie Banner ── */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--black);
+  color: rgba(255,255,255,0.85);
+  padding: 1.25rem 1.5rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.25);
+  transform: translateY(100%);
+  transition: transform 0.35s ease;
+}
+.cookie-banner.visible { transform: translateY(0); }
+.cookie-banner p { font-size: 0.875rem; color: rgba(255,255,255,0.8); margin: 0; flex: 1; min-width: 220px; }
+.cookie-banner a { color: var(--blue); text-decoration: underline; }
+.cookie-banner-btns { display: flex; gap: 0.5rem; flex-shrink: 0; }
+.cookie-btn-accept {
+  background: var(--blue);
+  color: var(--white);
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.cookie-btn-accept:hover { background: var(--blue-dark); }
+.cookie-btn-decline {
+  background: transparent;
+  color: rgba(255,255,255,0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all var(--transition);
+}
+.cookie-btn-decline:hover { color: var(--white); border-color: rgba(255,255,255,0.5); }
+
+/* ── Sticky CTA Button ── */
+.sticky-cta-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  z-index: 998;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+.sticky-cta-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.sticky-cta-btn a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--blue);
+  color: var(--white) !important;
+  padding: 0.875rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 24px rgba(0,74,173,0.45);
+  transition: all var(--transition);
+  white-space: nowrap;
+  text-decoration: none;
+}
+.sticky-cta-btn a:hover {
+  background: var(--blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(0,74,173,0.55);
+}
+@media (max-width: 480px) {
+  .sticky-cta-btn { bottom: 1.25rem; right: 1rem; }
+  .sticky-cta-btn a { padding: 0.75rem 1.1rem; font-size: 0.85rem; }
+}
+
+/* ── Google Reviews Badge ── */
+.google-reviews-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 2rem;
+  margin: 0 auto 2.5rem;
+  max-width: 520px;
+  box-shadow: var(--shadow);
+  flex-wrap: wrap;
+}
+.google-badge-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3c4043;
+}
+.google-badge-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+.google-badge-score { font-size: 2rem; font-weight: 800; color: var(--text); line-height: 1; }
+.google-badge-stars { color: #FBBC04; font-size: 1.1rem; letter-spacing: 2px; }
+.google-badge-count { font-size: 0.8rem; color: var(--text-muted); }
+.google-badge-link {
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.google-badge-link:hover { color: var(--blue-dark); }

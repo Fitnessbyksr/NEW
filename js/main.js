@@ -205,3 +205,55 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   }, { threshold: 0.1 });
   els.forEach(el => io.observe(el));
 })();
+
+// ── Sticky CTA button ──
+function initStickyCTA() {
+  const path = window.location.pathname.split('/').pop() || 'index.html';
+  if (path === 'contact.html') return;
+
+  const wrap = document.createElement('div');
+  wrap.className = 'sticky-cta-btn';
+  wrap.innerHTML = '<a href="contact.html">Book free consultation</a>';
+  document.body.appendChild(wrap);
+
+  const onScroll = () => {
+    const scrolled = window.scrollY > 400;
+    const footer = document.querySelector('.footer');
+    const nearFooter = footer ? footer.getBoundingClientRect().top < window.innerHeight + 80 : false;
+    wrap.classList.toggle('show', scrolled && !nearFooter);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+// ── Cookie consent banner ──
+(function () {
+  if (localStorage.getItem('cookieConsent')) {
+    initStickyCTA();
+    return;
+  }
+
+  const banner = document.createElement('div');
+  banner.className = 'cookie-banner';
+  banner.setAttribute('role', 'region');
+  banner.setAttribute('aria-label', 'Cookie consent');
+  banner.innerHTML =
+    '<p>This site uses cookies to improve your experience. ' +
+    '<a href="privacy-policy.html">Privacy Policy</a>.</p>' +
+    '<div class="cookie-banner-btns">' +
+    '<button class="cookie-btn-accept">Accept</button>' +
+    '<button class="cookie-btn-decline">Decline</button>' +
+    '</div>';
+
+  document.body.appendChild(banner);
+  requestAnimationFrame(() => requestAnimationFrame(() => banner.classList.add('visible')));
+
+  function dismiss(accepted) {
+    localStorage.setItem('cookieConsent', accepted ? 'accepted' : 'declined');
+    banner.classList.remove('visible');
+    setTimeout(() => { banner.remove(); initStickyCTA(); }, 350);
+  }
+
+  banner.querySelector('.cookie-btn-accept').addEventListener('click', () => dismiss(true));
+  banner.querySelector('.cookie-btn-decline').addEventListener('click', () => dismiss(false));
+})();
