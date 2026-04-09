@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Calorie & Protein Calculator | FitnessbyKSR</title>
+  <meta name="description" content="Free calorie and protein calculator from FitnessbyKSR. Find your daily calorie target and protein goal based on your body, activity level, and goals.">
+  <link rel="canonical" href="https://www.fitnessbyksr.co.uk/calorie-calculator.html">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Free Calorie & Protein Calculator | FitnessbyKSR">
+  <meta property="og:description" content="Find your daily calorie target and protein goal — free calculator from a Manchester personal trainer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.fitnessbyksr.co.uk/calorie-calculator.html">
+  <style>
+    .calc-section {
+      padding: 4rem 0 5rem;
+    }
+    .calc-intro {
+      max-width: 640px;
+      margin: 0 auto 3rem;
+      text-align: center;
+    }
+    .calc-intro p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+    .calc-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      max-width: 680px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    .calc-body {
+      padding: 2.5rem;
+    }
+    .calc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 540px) {
+      .calc-grid { grid-template-columns: 1fr; }
+      .calc-body { padding: 1.5rem; }
+    }
+    .calc-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .calc-field.full-width {
+      grid-column: 1 / -1;
+    }
+    .calc-field label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .calc-field input,
+    .calc-field select {
+      padding: 0.65rem 0.85rem;
+      border: 1.5px solid #dde1e9;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: var(--text);
+      background: #fff;
+      transition: border-color 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .calc-field input:focus,
+    .calc-field select:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+    .unit-toggle {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .unit-toggle input[type="number"] {
+      flex: 1;
+    }
+    .unit-btn-group {
+      display: flex;
+      border: 1.5px solid #dde1e9;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .unit-btn {
+      padding: 0.65rem 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: #fff;
+      border: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-family: inherit;
+      transition: background 0.15s, color 0.15s;
+    }
+    .unit-btn.active {
+      background: var(--blue);
+      color: #fff;
+    }
+    .sex-toggle {
+      display: flex;
+      border: 1.5px solid #dde1e9;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .sex-btn {
+      flex: 1;
+      padding: 0.65rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      background: #fff;
+      border: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-family: inherit;
+      transition: background 0.15s, color 0.15s;
+    }
+    .sex-btn.active {
+      background: var(--blue);
+      color: #fff;
+    }
+    .goal-options {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.6rem;
+    }
+    @media (max-width: 540px) {
+      .goal-options { grid-template-columns: 1fr; }
+    }
+    .goal-option {
+      border: 2px solid #dde1e9;
+      border-radius: 10px;
+      padding: 0.85rem 0.75rem;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .goal-option:hover {
+      border-color: var(--blue);
+    }
+    .goal-option.active {
+      border-color: var(--blue);
+      background: #f0f5ff;
+    }
+    .goal-option input[type="radio"] {
+      display: none;
+    }
+    .goal-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+    .goal-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text);
+      display: block;
+    }
+    .goal-desc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+    .calc-submit {
+      margin-top: 1.75rem;
+    }
+    .calc-submit .btn {
+      width: 100%;
+      padding: 0.9rem;
+      font-size: 1.05rem;
+    }
+    /* Results */
+    .calc-results {
+      background: linear-gradient(135deg, #001f5c 0%, #004AAD 100%);
+      padding: 2.5rem;
+      display: none;
+    }
+    .calc-results.visible {
+      display: block;
+    }
+    .results-heading {
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0 0 1.5rem;
+      text-align: center;
+      opacity: 0.9;
+    }
+    .results-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 540px) {
+      .results-grid { grid-template-columns: 1fr; }
+      .calc-results { padding: 1.5rem; }
+    }
+    .result-box {
+      background: rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .result-box.highlight {
+      background: rgba(255,255,255,0.2);
+      border: 1.5px solid rgba(255,255,255,0.3);
+    }
+    .result-label {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+    .result-value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1;
+    }
+    .result-unit {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 0.25rem;
+    }
+    .result-explanation {
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 1.25rem;
+      color: rgba(255,255,255,0.9);
+      font-size: 0.925rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+    .result-explanation strong {
+      color: #fff;
+    }
+    .results-cta {
+      text-align: center;
+    }
+    .results-cta .btn-white {
+      background: #fff;
+      color: var(--blue);
+      font-weight: 700;
+      border: none;
+    }
+    .results-cta .btn-white:hover {
+      background: #f0f0f0;
+    }
+    .results-cta p {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.825rem;
+      margin-top: 0.75rem;
+    }
+    .disclaimer {
+      max-width: 640px;
+      margin: 1.5rem auto 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar" role="navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="fitnessbyksr logo.jpeg" alt="FitnessbyKSR Personal Trainer" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="free-guide.html" class="btn btn-primary nav-cta">Free 5-Day Guide</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu hidden">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="free-guide.html" class="btn btn-primary">Free 5-Day Guide</a>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<section class="page-hero">
+  <div class="container">
+    <h1>Calorie & Protein Calculator</h1>
+    <p>Find out how many calories you need each day — and how much protein to aim for. Takes about 30 seconds.</p>
+  </div>
+</section>
+
+<!-- ── CALCULATOR ── -->
+<section class="calc-section">
+  <div class="container">
+
+    <div class="calc-intro">
+      <p>This uses the Mifflin-St Jeor equation — the most accurate formula for estimating daily calorie needs. Fill in your details below and get your personalised targets.</p>
+    </div>
+
+    <div class="calc-card">
+      <div class="calc-body">
+
+        <!-- Sex -->
+        <div class="calc-field full-width" style="margin-bottom:1.25rem;">
+          <label>Biological sex</label>
+          <div class="sex-toggle">
+            <button type="button" class="sex-btn active" data-sex="male" onclick="setSex('male')">Male</button>
+            <button type="button" class="sex-btn" data-sex="female" onclick="setSex('female')">Female</button>
+          </div>
+        </div>
+
+        <div class="calc-grid">
+
+          <!-- Age -->
+          <div class="calc-field">
+            <label for="age">Age</label>
+            <input type="number" id="age" min="16" max="99" placeholder="e.g. 38">
+          </div>
+
+          <!-- Weight -->
+          <div class="calc-field">
+            <label for="weight">Weight</label>
+            <div class="unit-toggle">
+              <input type="number" id="weight" min="1" placeholder="e.g. 80">
+              <div class="unit-btn-group">
+                <button type="button" class="unit-btn active" id="weight-kg" onclick="setWeightUnit('kg')">kg</button>
+                <button type="button" class="unit-btn" id="weight-lbs" onclick="setWeightUnit('lbs')">lbs</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Height -->
+          <div class="calc-field full-width">
+            <label>Height</label>
+            <div style="display:flex;gap:0.5rem;align-items:center;">
+              <div id="height-cm-wrap" style="flex:1;">
+                <input type="number" id="height-cm" min="100" max="250" placeholder="e.g. 175" style="width:100%;">
+              </div>
+              <div id="height-ft-wrap" style="flex:1;display:none;gap:0.4rem;display:none;">
+                <div style="display:flex;gap:0.4rem;">
+                  <input type="number" id="height-ft" min="4" max="8" placeholder="ft" style="flex:1;">
+                  <input type="number" id="height-in" min="0" max="11" placeholder="in" style="flex:1;">
+                </div>
+              </div>
+              <div class="unit-btn-group">
+                <button type="button" class="unit-btn active" id="height-cm-btn" onclick="setHeightUnit('cm')">cm</button>
+                <button type="button" class="unit-btn" id="height-ft-btn" onclick="setHeightUnit('ft')">ft</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity -->
+          <div class="calc-field full-width">
+            <label for="activity">Activity level</label>
+            <select id="activity">
+              <option value="1.2">Sedentary — desk job, little or no exercise</option>
+              <option value="1.375">Lightly active — exercise 1–3 days a week</option>
+              <option value="1.55" selected>Moderately active — exercise 3–5 days a week</option>
+              <option value="1.725">Very active — hard exercise 6–7 days a week</option>
+              <option value="1.9">Extra active — physical job plus daily training</option>
+            </select>
+          </div>
+
+          <!-- Goal -->
+          <div class="calc-field full-width">
+            <label style="margin-bottom:0.5rem;">Your goal</label>
+            <div class="goal-options">
+              <label class="goal-option active" id="goal-lose">
+                <input type="radio" name="goal" value="lose" checked>
+                <div class="goal-icon">⚖️</div>
+                <span class="goal-label">Lose weight</span>
+                <div class="goal-desc">Moderate deficit</div>
+              </label>
+              <label class="goal-option" id="goal-maintain">
+                <input type="radio" name="goal" value="maintain">
+                <div class="goal-icon">🔁</div>
+                <span class="goal-label">Maintain</span>
+                <div class="goal-desc">Stay as you are</div>
+              </label>
+              <label class="goal-option" id="goal-build">
+                <input type="radio" name="goal" value="build">
+                <div class="goal-icon">💪</div>
+                <span class="goal-label">Build muscle</span>
+                <div class="goal-desc">Small surplus</div>
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="calc-submit">
+          <button type="button" class="btn btn-primary" onclick="calculate()">Calculate my targets →</button>
+        </div>
+
+        <div id="error-msg" style="display:none;margin-top:1rem;padding:0.75rem 1rem;background:#fff0f0;border-radius:8px;color:#c0392b;font-size:0.9rem;"></div>
+
+      </div>
+
+      <!-- Results -->
+      <div class="calc-results" id="results">
+        <p class="results-heading">Your personalised targets</p>
+        <div class="results-grid">
+          <div class="result-box highlight">
+            <div class="result-label">Daily calories</div>
+            <div class="result-value" id="res-calories">—</div>
+            <div class="result-unit">kcal per day</div>
+          </div>
+          <div class="result-box highlight">
+            <div class="result-label">Protein goal</div>
+            <div class="result-value" id="res-protein">—</div>
+            <div class="result-unit">grams per day</div>
+          </div>
+          <div class="result-box">
+            <div class="result-label">Maintenance calories</div>
+            <div class="result-value" id="res-maintenance">—</div>
+            <div class="result-unit">kcal per day</div>
+          </div>
+          <div class="result-box">
+            <div class="result-label">Weekly calorie target</div>
+            <div class="result-value" id="res-weekly">—</div>
+            <div class="result-unit">kcal per week</div>
+          </div>
+        </div>
+        <div class="result-explanation" id="res-explanation"></div>
+        <div class="results-cta">
+          <a href="contact.html" class="btn btn-white">Book a free consultation</a>
+          <p>Want help putting this into practice? Come in for a free chat — no commitment.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="disclaimer">These figures are estimates based on established formulas. Individual results vary. Always consult a healthcare professional before making significant changes to your diet.</p>
+
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ── -->
+<section class="section bg-grey">
+  <div class="container" style="max-width:720px;">
+    <h2 class="section-title text-center">How to use your results</h2>
+    <p class="section-subtitle" style="text-align:center;max-width:none;margin:0.5rem 0 2.5rem;">A few things worth knowing before you dive in.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">What does maintenance calories mean?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Maintenance calories is the number of calories your body needs each day to stay exactly as you are — not losing weight, not gaining it. Everything above that creates a surplus (useful for building muscle), everything below creates a deficit (useful for losing fat).</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Why does the protein goal matter?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Protein keeps you full, preserves muscle when you're losing weight, and provides the building blocks your body needs to recover from exercise. Most people eating a typical diet get about half as much as they need. The goal shown is based on your bodyweight — aim to get close to it across the day rather than all at once.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How accurate is this?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>The calculator uses the Mifflin-St Jeor equation, which research shows is the most accurate formula for most people. It'll get you within 10–15% of your actual needs. Use it as a starting point, track your weight for 2–3 weeks, and adjust up or down depending on what's happening. Real-world feedback beats any formula.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do I need to count calories to get results?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>No — but knowing your rough targets helps. Most of my clients don't count every calorie. Instead, we use these numbers to build awareness: eating enough protein, not eating too little overall, and spotting obvious gaps. The goal is to understand your intake, not obsess over it.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What if I want a more personalised plan?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>This calculator gives you a solid starting point. But if you want guidance tailored to your lifestyle, habits, and training — that's exactly what I do with clients. Book a free consultation and we can talk through what would actually work for you.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Want help putting the numbers into practice?</h2>
+    <p>A calorie target is a starting point — not a plan. If you want someone to help you make sense of it and build something around your actual life, that's what I do.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-white btn-lg">Book a free consultation</a>
+      <a href="blog-nutrition-basics.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5);color:white;">Read: The truth about nutrition</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">
+          <img src="fitnessbyksr logo.jpeg" alt="FitnessbyKSR Personal Trainer" class="logo-img">
+        </a>
+        <p>Honest fitness from a Manchester PT who's been where you are.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Kallum</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Free resources</h4>
+        <ul class="footer-links">
+          <li><a href="free-guide.html">5 Days to Not Hating the Gym</a></li>
+          <li><a href="calorie-calculator.html">Calorie & Protein Calculator</a></li>
+          <li><a href="blog-gym-anxiety.html">Gym Anxiety Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Book a free consultation</a></li>
+          <li><a href="mailto:ksrfitnessmanc@gmail.com">ksrfitnessmanc@gmail.com</a></li>
+          <li style="color:rgba(255,255,255,0.5);font-size:0.875rem;">PT Factory, Denton, Manchester</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FitnessbyKSR. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  var selectedSex = 'male';
+  var weightUnit = 'kg';
+  var heightUnit = 'cm';
+
+  function setSex(sex) {
+    selectedSex = sex;
+    document.querySelectorAll('.sex-btn').forEach(function(b) {
+      b.classList.toggle('active', b.dataset.sex === sex);
+    });
+  }
+
+  function setWeightUnit(unit) {
+    weightUnit = unit;
+    document.getElementById('weight-kg').classList.toggle('active', unit === 'kg');
+    document.getElementById('weight-lbs').classList.toggle('active', unit === 'lbs');
+    document.getElementById('weight').placeholder = unit === 'kg' ? 'e.g. 80' : 'e.g. 176';
+  }
+
+  function setHeightUnit(unit) {
+    heightUnit = unit;
+    document.getElementById('height-cm-btn').classList.toggle('active', unit === 'cm');
+    document.getElementById('height-ft-btn').classList.toggle('active', unit === 'ft');
+    document.getElementById('height-cm-wrap').style.display = unit === 'cm' ? '' : 'none';
+    document.getElementById('height-ft-wrap').style.display = unit === 'ft' ? '' : 'none';
+  }
+
+  // Goal selection
+  document.querySelectorAll('.goal-option').forEach(function(opt) {
+    opt.addEventListener('click', function() {
+      document.querySelectorAll('.goal-option').forEach(function(o) { o.classList.remove('active'); });
+      this.classList.add('active');
+    });
+  });
+
+  function showError(msg) {
+    var el = document.getElementById('error-msg');
+    el.textContent = msg;
+    el.style.display = 'block';
+  }
+  function clearError() {
+    document.getElementById('error-msg').style.display = 'none';
+  }
+
+  function calculate() {
+    clearError();
+
+    var age = parseFloat(document.getElementById('age').value);
+    var weightRaw = parseFloat(document.getElementById('weight').value);
+    var activity = parseFloat(document.getElementById('activity').value);
+    var goal = document.querySelector('input[name="goal"]:checked').value;
+
+    if (!age || age < 16 || age > 99) { showError('Please enter a valid age between 16 and 99.'); return; }
+    if (!weightRaw || weightRaw <= 0) { showError('Please enter your weight.'); return; }
+
+    // Convert weight to kg
+    var weightKg = weightUnit === 'lbs' ? weightRaw * 0.453592 : weightRaw;
+
+    // Get height in cm
+    var heightCm;
+    if (heightUnit === 'cm') {
+      heightCm = parseFloat(document.getElementById('height-cm').value);
+      if (!heightCm || heightCm < 100 || heightCm > 250) { showError('Please enter a valid height in cm (100–250).'); return; }
+    } else {
+      var ft = parseFloat(document.getElementById('height-ft').value) || 0;
+      var inches = parseFloat(document.getElementById('height-in').value) || 0;
+      heightCm = (ft * 12 + inches) * 2.54;
+      if (heightCm < 100 || heightCm > 250) { showError('Please enter a valid height.'); return; }
+    }
+
+    // Mifflin-St Jeor BMR
+    var bmr;
+    if (selectedSex === 'male') {
+      bmr = 10 * weightKg + 6.25 * heightCm - 5 * age + 5;
+    } else {
+      bmr = 10 * weightKg + 6.25 * heightCm - 5 * age - 161;
+    }
+
+    // TDEE
+    var tdee = Math.round(bmr * activity);
+
+    // Goal adjustment
+    var goalCalories, proteinMultiplier, explanationText;
+    if (goal === 'lose') {
+      goalCalories = tdee - 400;
+      proteinMultiplier = 2.0;
+      explanationText = 'A 400 calorie daily deficit is enough to lose roughly 0.4kg per week — slow enough to preserve muscle, fast enough to see real progress. Combine this with hitting your protein target and some resistance training and you\'ll lose fat, not just weight.';
+    } else if (goal === 'maintain') {
+      goalCalories = tdee;
+      proteinMultiplier = 1.8;
+      explanationText = 'Eating at your maintenance level keeps your weight stable. This is a good target if you\'re focused on building strength, improving fitness, or just keeping things consistent. Hitting your protein target helps preserve and build muscle even at maintenance.';
+    } else {
+      goalCalories = tdee + 200;
+      proteinMultiplier = 2.0;
+      explanationText = 'A modest 200 calorie surplus gives your body what it needs to build muscle without gaining excess fat. Building muscle takes time — a slow, consistent approach with enough protein and progressive training beats aggressive bulking every time.';
+    }
+
+    var protein = Math.round(weightKg * proteinMultiplier);
+
+    // Display
+    document.getElementById('res-calories').textContent = goalCalories.toLocaleString();
+    document.getElementById('res-protein').textContent = protein + 'g';
+    document.getElementById('res-maintenance').textContent = tdee.toLocaleString();
+    document.getElementById('res-weekly').textContent = (goalCalories * 7).toLocaleString();
+    document.getElementById('res-explanation').innerHTML = '<strong>What this means:</strong> ' + explanationText;
+
+    var resultsEl = document.getElementById('results');
+    resultsEl.classList.add('visible');
+    setTimeout(function() {
+      resultsEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
+  }
+</script>
+</body>
+</html>

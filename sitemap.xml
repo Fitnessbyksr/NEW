@@ -31,6 +31,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.fitnessbyksr.co.uk/calorie-calculator.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.fitnessbyksr.co.uk/blog-gym-anxiety.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
