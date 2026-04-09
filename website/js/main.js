@@ -75,16 +75,33 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// ── Contact form submission (demo) ──
+// ── Contact form submission ──
 (function () {
   const form = document.getElementById('contact-form');
   if (!form) return;
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('[type="submit"]');
-    btn.textContent = 'Sent! Kallum will be in touch.';
+    btn.textContent = 'Sending…';
     btn.disabled = true;
-    btn.style.background = '#28a745';
+    try {
+      const res = await fetch('https://formspree.io/f/xpqoekeq', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+      if (res.ok) {
+        btn.textContent = 'Sent! Kallum will be in touch.';
+        btn.style.background = '#28a745';
+        form.reset();
+      } else {
+        btn.textContent = 'Something went wrong — please email directly.';
+        btn.disabled = false;
+      }
+    } catch {
+      btn.textContent = 'Something went wrong — please email directly.';
+      btn.disabled = false;
+    }
   });
 })();
 
