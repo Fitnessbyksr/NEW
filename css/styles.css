@@ -1268,7 +1268,7 @@ p { color: var(--text-muted); line-height: 1.75; }
   flex-wrap: wrap;
   gap: 1.5rem 2.5rem;
 }
-.trust-item {
+.trust-bar .trust-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1280,5 +1280,5 @@ p { color: var(--text-muted); line-height: 1.75; }
 .trust-icon { font-size: 1.1rem; }
 @media (max-width: 640px) {
   .trust-bar { gap: 1rem 1.5rem; justify-content: flex-start; }
-  .trust-item { font-size: 0.82rem; }
+  .trust-bar .trust-item { font-size: 0.82rem; }
 }
