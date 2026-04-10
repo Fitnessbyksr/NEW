@@ -1194,3 +1194,91 @@ p { color: var(--text-muted); line-height: 1.75; }
   white-space: nowrap;
 }
 .google-badge-link:hover { color: var(--blue-dark); }
+
+/* ── WhatsApp Button ── */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1.5rem;
+  z-index: 997;
+  width: 52px;
+  height: 52px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  text-decoration: none;
+}
+.whatsapp-fab.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.whatsapp-fab:hover { background: #1ebe5c; transform: translateY(-2px); box-shadow: 0 6px 22px rgba(0,0,0,0.3); }
+.whatsapp-fab svg { width: 28px; height: 28px; }
+@media (max-width: 480px) {
+  .whatsapp-fab { bottom: 4.75rem; right: 1rem; width: 46px; height: 46px; }
+  .whatsapp-fab svg { width: 24px; height: 24px; }
+}
+
+/* ── Related Posts ── */
+.related-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.related-post-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.related-post-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); }
+.related-post-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--blue);
+}
+.related-post-card h4 { font-size: 0.95rem; line-height: 1.4; margin: 0; flex: 1; }
+.related-read-more { font-size: 0.85rem; color: var(--blue); font-weight: 600; margin-top: 0.25rem; }
+@media (max-width: 640px) { .related-posts-grid { grid-template-columns: 1fr; } }
+
+/* ── Article reading time ── */
+.article-read-time {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* ── Trust Bar ── */
+.trust-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+.trust-icon { font-size: 1.1rem; }
+@media (max-width: 640px) {
+  .trust-bar { gap: 1rem 1.5rem; justify-content: flex-start; }
+  .trust-item { font-size: 0.82rem; }
+}
