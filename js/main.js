@@ -91,9 +91,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         body: new FormData(form)
       });
       if (res.ok) {
-        btn.textContent = 'Sent! Kallum will be in touch.';
-        btn.style.background = '#28a745';
-        form.reset();
+        window.location.href = 'thank-you.html';
       } else {
         btn.textContent = 'Something went wrong — please email directly.';
         btn.disabled = false;
