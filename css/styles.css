@@ -971,8 +971,8 @@ p { color: var(--text-muted); line-height: 1.75; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 .footer-brand p { font-size: 0.875rem; margin: 1rem 0 1.5rem; color: rgba(255,255,255,0.6); max-width: 260px; }
@@ -1041,7 +1041,7 @@ p { color: var(--text-muted); line-height: 1.75; }
   .hero-image, .story-image, .about-image { max-width: 480px; margin: 0 auto; }
   .cards-grid, .testimonials-grid, .blog-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
   .lead-magnet-inner { gap: 3rem; }
 }
 
