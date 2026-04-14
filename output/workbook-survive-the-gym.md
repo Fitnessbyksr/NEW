@@ -1,24 +1,24 @@
 # How to Survive the Gym
 ### A No-Nonsense Beginner's Guide for People Who'd Rather Be Anywhere Else
 
-*Written by Kallum Rolfe — Personal Trainer, Denton, Manchester*
+*Written by Kallum Rolfe Personal Trainer, Denton, Manchester*
 *Fitnessbyksr.co.uk*
 
 ---
 
 ## A Word Before We Start
 
-Right, first things first — if you've picked this up, you're probably a bit nervous about the gym.
+Right, first things first if you've picked this up, you're probably a bit nervous about the gym.
 
 Maybe you've never been. Maybe you've been before and it didn't stick. Maybe someone bought you a membership and you haven't used it yet because walking through that door feels like a bigger deal than it should.
 
 I get it. I've been exactly where you are.
 
-I used to be a police officer. Towards the end of my time in the force, my mental health was in a rough place. I was putting on weight, sleeping badly, and honestly — I wasn't feeling much like myself.
+I used to be a police officer. Towards the end of my time in the force, my mental health was in a rough place. I was putting on weight, sleeping badly, and honestly I wasn't feeling much like myself.
 
 I tried the gym. Hated it. Felt like everyone knew what they were doing except me. Quit within a few weeks.
 
-Then eventually I gave it another go — with the right environment, the right guidance, and no pressure — and it changed my life. Properly. To the point where I left the police, qualified as a personal trainer, and now spend every day helping people in Manchester do the same thing.
+Then eventually I gave it another go with the right environment, the right guidance, and no pressure and it changed my life. Properly. To the point where I left the police, qualified as a personal trainer, and now spend every day helping people in Manchester do the same thing.
 
 This guide isn't about getting huge. It's not about six packs or boot camps or anything like that.
 
@@ -26,7 +26,7 @@ It's a plain, honest survival guide for your first few weeks in the gym. No jarg
 
 You've got this. Let's go.
 
-— Kallum
+ Kallum
 
 ---
 
@@ -39,7 +39,7 @@ The gym looks intimidating from the outside. Inside, it's actually just a room w
 Most gyms are split into a few areas:
 
 **Cardio Zone**
-This is usually near the entrance. Treadmills, exercise bikes, rowing machines, cross-trainers. Most people walk or jog on these — they're not going flat-out. This is a low-pressure area to start with because everyone's just... plodding along.
+This is usually near the entrance. Treadmills, exercise bikes, rowing machines, cross-trainers. Most people walk or jog on these they're not going flat-out. This is a low-pressure area to start with because everyone's just... plodding along.
 
 **Resistance Machines**
 These are the big metal machines with adjustable seats and weight stacks. They look complicated but they're actually the most beginner-friendly thing in the gym. They guide your movement, so you can't really do them wrong. More on these later.
@@ -48,7 +48,7 @@ These are the big metal machines with adjustable seats and weight stacks. They l
 Dumbbells, barbells, benches. This is the bit that scares people the most. The good news: you don't need to go near it in your first few weeks. The even better news: when you do, no one's watching you as much as you think.
 
 **Stretching/Mat Area**
-Usually a quieter corner with mats on the floor. Great for warming up and cooling down. Often ignored — use it.
+Usually a quieter corner with mats on the floor. Great for warming up and cooling down. Often ignored use it.
 
 **Changing Rooms**
 Not scary. Just changing rooms.
@@ -61,7 +61,7 @@ Almost every single one of my clients has described some version of this feeling
 
 *"I felt like everyone was going to look at me and know I didn't belong there."*
 
-Here's the truth: the regulars are too focused on their own workout to watch you. The other beginners are in their heads the same as you. And the staff have seen thousands of first-timers — they're not judging, they're genuinely just pleased you came in.
+Here's the truth: the regulars are too focused on their own workout to watch you. The other beginners are in their heads the same as you. And the staff have seen thousands of first-timers they're not judging, they're genuinely just pleased you came in.
 
 The anxiety is your brain trying to protect you from the unknown. Walk through the door once, and it drops by about 70%. Walk through five times and it's barely there.
 
@@ -84,11 +84,11 @@ That's a legitimate visit. You've done it. You know the layout. Next time you co
 ## The Kit List
 
 **Must-haves:**
-- Trainers (any decent sports trainers — doesn't need to be specialist)
+- Trainers (any decent sports trainers doesn't need to be specialist)
 - Comfortable workout clothes (anything you can move in)
 - A water bottle
 - A small towel (most gyms ask you to wipe equipment after use)
-- Headphones (optional but brilliant — music genuinely helps, and headphones signal "I'm in my zone")
+- Headphones (optional but brilliant music genuinely helps, and headphones signal "I'm in my zone")
 
 **Nice to have:**
 - A gym bag you can leave in a locker
@@ -127,7 +127,7 @@ Dumbbells go back on the rack. Plates come off the bar when you're done. It's on
 ---
 
 **3. Don't hog equipment you're not using.**
-If you're sitting on a machine scrolling your phone, people need to get past. In the same way, it's totally fine to ask someone "are you still on this?" — and equally fine if someone asks you.
+If you're sitting on a machine scrolling your phone, people need to get past. In the same way, it's totally fine to ask someone "are you still on this?" and equally fine if someone asks you.
 
 ---
 
@@ -137,7 +137,7 @@ This is the universal gym signal. If someone's got headphones in, they're in the
 ---
 
 **5. It's okay to not know how a machine works.**
-Absolutely nobody expects you to walk in knowing how everything works. Ask a staff member — that's what they're there for. They will not laugh at you. Most of them love showing people how to use things.
+Absolutely nobody expects you to walk in knowing how everything works. Ask a staff member that's what they're there for. They will not laugh at you. Most of them love showing people how to use things.
 
 ---
 
@@ -160,7 +160,7 @@ You don't need to know everything. You just need to know enough to get started.
 ## Cardio Machines
 
 **Treadmill**
-You walk or run on it. Speed and incline are usually controlled by the buttons on the front. Start with a walk and build up from there. Always step off by putting your feet either side of the belt first — don't just stop mid-stride.
+You walk or run on it. Speed and incline are usually controlled by the buttons on the front. Start with a walk and build up from there. Always step off by putting your feet either side of the belt first don't just stop mid-stride.
 
 **Stationary Bike**
 Sit on it, pedal. Resistance usually adjusted with a dial or buttons. Great low-impact option if your knees or joints are a bit sensitive.
@@ -175,7 +175,7 @@ Looks more complicated than it is. Drive with your legs first, then lean back sl
 
 ## Resistance Machines
 
-These are the guided machines — the ones with a seat, a weight stack, and usually a diagram showing how to use them. They're the most beginner-friendly things in the gym.
+These are the guided machines the ones with a seat, a weight stack, and usually a diagram showing how to use them. They're the most beginner-friendly things in the gym.
 
 **Leg Press**
 You sit back and push a platform away with your feet. Targets your legs (quads, hamstrings, glutes). Much easier to learn than a squat, similar benefit.
@@ -190,9 +190,9 @@ Like a push-up but sitting down. You push handles away from your chest. Targets 
 You pull handles toward you while seated. Targets your back and biceps. Good posture builder.
 
 **Leg Extension / Leg Curl**
-Isolate the front (extension) or back (curl) of your thighs. These machines usually have a diagram — follow it.
+Isolate the front (extension) or back (curl) of your thighs. These machines usually have a diagram follow it.
 
-For all resistance machines: start with a light weight until you're confident with the movement. You can always add more — starting too heavy is how people hurt themselves or feel embarrassed.
+For all resistance machines: start with a light weight until you're confident with the movement. You can always add more starting too heavy is how people hurt themselves or feel embarrassed.
 
 ---
 
@@ -203,7 +203,7 @@ Dumbbells, barbells, and kettlebells.
 You don't need to go near the free weights section in your first couple of weeks if it feels overwhelming. The machines will do fine.
 
 When you do venture over:
-- Dumbbells are the most accessible. Pick a weight that feels manageable — not too easy, not so heavy you're straining.
+- Dumbbells are the most accessible. Pick a weight that feels manageable not too easy, not so heavy you're straining.
 - Common beginner dumbbell exercises: bicep curls, shoulder press, goblet squat, dumbbell row.
 - If you're not sure of the form, film yourself on your phone (lots of people do this), compare to a YouTube tutorial, or ask the gym staff.
 
@@ -211,7 +211,7 @@ When you do venture over:
 
 # CHAPTER 5: Your First 4 Weeks
 
-A rough roadmap. Don't treat this as gospel — adapt it to how you feel.
+A rough roadmap. Don't treat this as gospel adapt it to how you feel.
 
 ---
 
@@ -251,7 +251,7 @@ Notice: you probably feel less anxious walking in. You probably recognise some f
 
 **Goal:** See the progress that's already there.
 
-By week four you'll be stronger than you were when you started. Not dramatically — but the weights that felt heavy will feel easier. The 10-minute warm-up walk will feel steadier. You'll be getting changed in the changing room without thinking about it.
+By week four you'll be stronger than you were when you started. Not dramatically but the weights that felt heavy will feel easier. The 10-minute warm-up walk will feel steadier. You'll be getting changed in the changing room without thinking about it.
 
 Small things. Real things. This is how progress works.
 
@@ -272,7 +272,7 @@ Choose one:
 - Gentle cycle on the stationary bike
 - 10 minutes on the cross-trainer at an easy pace
 
-Goal: get your heart rate up a bit and your muscles warm. Not exhausted — just ready.
+Goal: get your heart rate up a bit and your muscles warm. Not exhausted just ready.
 
 ---
 
@@ -284,37 +284,37 @@ Start with a weight where the last 2–3 reps feel like an effort but you can co
 
 ---
 
-**1. Leg Press** — 3 sets × 12 reps
+**1. Leg Press** 3 sets × 12 reps
 *Targets: thighs, glutes*
-Sit in the machine, feet hip-width apart on the platform. Push away smoothly — don't lock your knees at the top. Control the weight on the way back.
+Sit in the machine, feet hip-width apart on the platform. Push away smoothly don't lock your knees at the top. Control the weight on the way back.
 
 ---
 
-**2. Lat Pulldown** — 3 sets × 12 reps
+**2. Lat Pulldown** 3 sets × 12 reps
 *Targets: back, arms*
-Grip the bar wider than shoulder-width. Pull it down to your upper chest. Lean back slightly. Control the bar back up — don't let it yank you.
+Grip the bar wider than shoulder-width. Pull it down to your upper chest. Lean back slightly. Control the bar back up don't let it yank you.
 
 ---
 
-**3. Chest Press Machine** — 3 sets × 12 reps
+**3. Chest Press Machine** 3 sets × 12 reps
 *Targets: chest, shoulders, triceps*
 Adjust the seat so the handles are at chest height. Push straight out. Don't arch your lower back off the seat. Control the return.
 
 ---
 
-**4. Seated Row** — 3 sets × 12 reps
+**4. Seated Row** 3 sets × 12 reps
 *Targets: back, biceps*
-Sit tall. Pull the handle to your lower chest. Squeeze your shoulder blades together at the end. Control the return — don't let the weight pull you forward.
+Sit tall. Pull the handle to your lower chest. Squeeze your shoulder blades together at the end. Control the return don't let the weight pull you forward.
 
 ---
 
-**5. Leg Extension** — 3 sets × 12 reps
+**5. Leg Extension** 3 sets × 12 reps
 *Targets: front of thighs (quads)*
 Sit in the machine, adjust the pad so it sits just above your ankles. Extend your legs out. Control the movement down. Don't slam the weight stack.
 
 ---
 
-**6. Shoulder Press Machine** — 3 sets × 12 reps
+**6. Shoulder Press Machine** 3 sets × 12 reps
 *Targets: shoulders, triceps*
 Adjust seat so handles start at shoulder height. Press straight up. Don't shrug your shoulders to your ears. Bring it back down with control.
 
@@ -324,19 +324,19 @@ Adjust seat so handles start at shoulder height. Press straight up. Don't shrug 
 
 Spend 5–10 minutes stretching the muscles you've worked. Hold each stretch for 20–30 seconds.
 
-- **Quad stretch** — stand on one leg, pull your other foot toward your backside
-- **Hamstring stretch** — sit on the floor, legs out, reach toward your feet
-- **Chest stretch** — arms wide, squeeze shoulder blades together, feel the stretch across your chest
-- **Lat stretch** — reach one arm over your head, lean to the opposite side
-- **Shoulder stretch** — pull one arm across your body, hold at the elbow
+- **Quad stretch** stand on one leg, pull your other foot toward your backside
+- **Hamstring stretch** sit on the floor, legs out, reach toward your feet
+- **Chest stretch** arms wide, squeeze shoulder blades together, feel the stretch across your chest
+- **Lat stretch** reach one arm over your head, lean to the opposite side
+- **Shoulder stretch** pull one arm across your body, hold at the elbow
 
 ---
 
 ## A Note on Progression
 
-Every 2 weeks, try to increase the weight slightly on each exercise — even by just one notch. This is how your body keeps adapting and getting stronger.
+Every 2 weeks, try to increase the weight slightly on each exercise even by just one notch. This is how your body keeps adapting and getting stronger.
 
-If a weight ever feels too heavy to do with good form, drop back down. There's no shame in it — that's how smart training works.
+If a weight ever feels too heavy to do with good form, drop back down. There's no shame in it that's how smart training works.
 
 ---
 
@@ -346,7 +346,7 @@ If a weight ever feels too heavy to do with good form, drop back down. There's n
 
 Some days you'll walk in feeling flat. The workout will feel harder than usual. Nothing will feel right. You'll want to leave early.
 
-This is normal. It happens to everyone — even people who've been training for years.
+This is normal. It happens to everyone even people who've been training for years.
 
 It doesn't mean you're failing. It doesn't mean your body's going backwards. It usually means you're tired, a bit dehydrated, or just having a human day.
 
@@ -360,7 +360,7 @@ Some days the gym anxiety comes back even after you've been going a while.
 
 When that happens: remember the first time you walked in. You survived it. This is no different.
 
-If you ever feel really overwhelmed in the gym — step outside for a minute. Get some water. Breathe. Come back in when you're ready. Or don't. Come back tomorrow.
+If you ever feel really overwhelmed in the gym step outside for a minute. Get some water. Breathe. Come back in when you're ready. Or don't. Come back tomorrow.
 
 Progress isn't linear. Two steps forward, one step back is still one step forward overall.
 
@@ -370,7 +370,7 @@ Progress isn't linear. Two steps forward, one step back is still one step forwar
 
 You miss a week. Then another week goes by. Then it's been a month and you tell yourself you'll start fresh on Monday.
 
-Here's what I'd say to that: forget Monday. Go today. Not for a big session — just go. Walk in. Do 20 minutes. Walk out.
+Here's what I'd say to that: forget Monday. Go today. Not for a big session just go. Walk in. Do 20 minutes. Walk out.
 
 The streak doesn't matter. Coming back is what matters.
 
@@ -378,9 +378,9 @@ The streak doesn't matter. Coming back is what matters.
 
 ## What to Do If You Get Injured
 
-If something hurts *during* exercise — stop. Not after, not at the end of the set. Stop.
+If something hurts *during* exercise stop. Not after, not at the end of the set. Stop.
 
-There's a difference between the discomfort of working hard (muscles burning, breathing hard, feeling tired) and actual pain. Sharp pain, pain in your joints, or any pain that doesn't feel right — stop and rest.
+There's a difference between the discomfort of working hard (muscles burning, breathing hard, feeling tired) and actual pain. Sharp pain, pain in your joints, or any pain that doesn't feel right stop and rest.
 
 Most minor niggles settle with a day or two of rest. If it doesn't improve, see a physio or GP before training that area again.
 
@@ -404,28 +404,28 @@ A good PT will:
 - Make sure you're using correct form (this matters more than how much weight you lift)
 - Build a programme around *your* goals, not a generic template
 - Keep you accountable on the weeks when motivation dips
-- Make it enjoyable — which is genuinely the biggest factor in whether it sticks
+- Make it enjoyable which is genuinely the biggest factor in whether it sticks
 
 A PT is not:
 - Someone who shouts at you
 - Someone who makes you feel bad for being a beginner
 - Someone who puts you through sessions that make you dread going back
 
-If any PT makes you feel judged, uncomfortable, or like fitness isn't for you — that's the wrong PT. Not the wrong you.
+If any PT makes you feel judged, uncomfortable, or like fitness isn't for you that's the wrong PT. Not the wrong you.
 
 ---
 
 ## Working with Me
 
-I'm Kallum. I train people in Denton, Manchester — in person at PT Factory — and online.
+I'm Kallum. I train people in Denton, Manchester in person at PT Factory and online.
 
 Most of my clients started exactly where you are right now. A lot of them told me they hated the gym before they started with me. Several of them now beat me through the door.
 
-If you want to have a chat about getting started — there's no commitment, no hard sell, and no exercise required at the first meeting. Just a conversation about where you are and where you want to be.
+If you want to have a chat about getting started there's no commitment, no hard sell, and no exercise required at the first meeting. Just a conversation about where you are and where you want to be.
 
 You can reach me through fitnessbyksr.co.uk or find me on Instagram and TikTok.
 
-No pressure. But if you want someone in your corner — I'm here.
+No pressure. But if you want someone in your corner I'm here.
 
 Cheers,
 
@@ -436,7 +436,7 @@ Fitnessbyksr.co.uk
 ---
 
 *"I didn't think the gym was for me. Then I found the right person to go with. Now I can't imagine my week without it."*
-— One of my clients. Could be you.
+ One of my clients. Could be you.
 
 ---
 
