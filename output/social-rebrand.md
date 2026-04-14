@@ -57,7 +57,8 @@ Real results. No judgement. No lycra required.
 👇 Free 5-day email series
 ```
 
-**Name field:** Kallum Rolfe | Manchester PT
+**Name field (Instagram):** Kallum Rolfe | Manchester PT ✅ *confirmed*
+**Name field (TikTok):** Kallum Rolfe | Manchester PT ✅ *confirmed*
 **Category:** Personal Trainer
 **Link:** opt-in page for "5 Days to Not Hating the Gym"
 
@@ -169,7 +170,8 @@ PT for gym-phobes. Manchester. No judgement. Real results.
 
 | Element | Change? | Notes |
 |---------|---------|-------|
-| Handle | Yes — to `@kallumrolfe_pt` | Consistent on both platforms |
+| Handle | No — keeping `@fitnessbyksr` | Already established, consistent with website |
+| Name field | Yes — `Kallum Rolfe | Manchester PT` ✅ | Both Instagram and TikTok |
 | Bio | Yes — use Option 1 above | Refresh with hook-led copy |
 | Profile photo | Optional | Keep if current one is warm + genuine |
 | Brand name | No | fitnessbyksr stays on website + all collateral |
