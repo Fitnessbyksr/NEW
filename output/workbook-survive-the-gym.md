@@ -73,7 +73,7 @@ The hardest rep is the first step through the door. Everything else gets easier 
 
 First visit doesn't have to be a workout. Seriously.
 
-Go in, have a look around, figure out where everything is. Say hello at the front desk. Find the changing rooms. See where the water fountain is.
+Go in, have a look around, figure out where everything is. Say hello at the front desk if they have one. Find the changing rooms. See where the water fountain is.
 
 That's a legitimate visit. You've done it. You know the layout. Next time you come in to actually train, you'll already feel 10 times more comfortable.
 
