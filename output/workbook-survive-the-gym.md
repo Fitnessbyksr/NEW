@@ -417,7 +417,7 @@ If any PT makes you feel judged, uncomfortable, or like fitness isn't for you th
 
 ## Working with Me
 
-I'm Kallum. I train people in Denton, Manchester in person at PT Factory and online.
+I'm Kallum. I train people in Denton, Manchester in person at The PT Factory and online.
 
 Most of my clients started exactly where you are right now. A lot of them told me they hated the gym before they started with me. Several of them now beat me through the door.
 
