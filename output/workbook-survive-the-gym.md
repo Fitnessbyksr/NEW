@@ -423,7 +423,7 @@ Most of my clients started exactly where you are right now. A lot of them told m
 
 If you want to have a chat about getting started there's no commitment, no hard sell, and no exercise required at the first meeting. Just a conversation about where you are and where you want to be.
 
-You can reach me through fitnessbyksr.co.uk or find me on Instagram and TikTok.
+You can reach me through fitnessbyksr.co.uk or find me on Instagram and TikTok @fitnessbyksr.
 
 No pressure. But if you want someone in your corner I'm here.
 
