@@ -28,10 +28,155 @@
 
 [[redirects]]
   from = "/faqs"
-  to = "/faq.html"
+  to = "/faq"
   status = 301
 
 [[redirects]]
   from = "/blog/why-you-should-train-with-a-personal-trainer-while-taking-mounjaro-or-ozempic-for-weight-loss"
-  to = "/blog-glp1.html"
+  to = "/blog-glp1"
+  status = 301
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/services.html"
+  to = "/services"
+  status = 301
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/results.html"
+  to = "/results"
+  status = 301
+
+[[redirects]]
+  from = "/free-guide.html"
+  to = "/free-guide"
+  status = 301
+
+[[redirects]]
+  from = "/faq.html"
+  to = "/faq"
+  status = 301
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/calorie-calculator.html"
+  to = "/calorie-calculator"
+  status = 301
+
+[[redirects]]
+  from = "/privacy-policy.html"
+  to = "/privacy-policy"
+  status = 301
+
+[[redirects]]
+  from = "/personal-trainer-manchester.html"
+  to = "/personal-trainer-manchester"
+  status = 301
+
+[[redirects]]
+  from = "/personal-trainer-denton.html"
+  to = "/personal-trainer-denton"
+  status = 301
+
+[[redirects]]
+  from = "/personal-trainer-hyde.html"
+  to = "/personal-trainer-hyde"
+  status = 301
+
+[[redirects]]
+  from = "/personal-trainer-ashton-under-lyne.html"
+  to = "/personal-trainer-ashton-under-lyne"
+  status = 301
+
+[[redirects]]
+  from = "/personal-trainer-stockport.html"
+  to = "/personal-trainer-stockport"
+  status = 301
+
+[[redirects]]
+  from = "/personal-trainer-droylsden.html"
+  to = "/personal-trainer-droylsden"
+  status = 301
+
+[[redirects]]
+  from = "/blog-gym-anxiety.html"
+  to = "/blog-gym-anxiety"
+  status = 301
+
+[[redirects]]
+  from = "/blog-motivation.html"
+  to = "/blog-motivation"
+  status = 301
+
+[[redirects]]
+  from = "/blog-lose-weight-hate-exercise.html"
+  to = "/blog-lose-weight-hate-exercise"
+  status = 301
+
+[[redirects]]
+  from = "/blog-exercise-over-50.html"
+  to = "/blog-exercise-over-50"
+  status = 301
+
+[[redirects]]
+  from = "/blog-mental-health.html"
+  to = "/blog-mental-health"
+  status = 301
+
+[[redirects]]
+  from = "/blog-pt-vs-alone.html"
+  to = "/blog-pt-vs-alone"
+  status = 301
+
+[[redirects]]
+  from = "/blog-stay-consistent.html"
+  to = "/blog-stay-consistent"
+  status = 301
+
+[[redirects]]
+  from = "/blog-nutrition-basics.html"
+  to = "/blog-nutrition-basics"
+  status = 301
+
+[[redirects]]
+  from = "/blog-get-back-into-it.html"
+  to = "/blog-get-back-into-it"
+  status = 301
+
+[[redirects]]
+  from = "/blog-not-seeing-results.html"
+  to = "/blog-not-seeing-results"
+  status = 301
+
+[[redirects]]
+  from = "/blog-exercises-for-beginners.html"
+  to = "/blog-exercises-for-beginners"
+  status = 301
+
+[[redirects]]
+  from = "/blog-active-at-christmas.html"
+  to = "/blog-active-at-christmas"
+  status = 301
+
+[[redirects]]
+  from = "/blog-glp1.html"
+  to = "/blog-glp1"
+  status = 301
+
+[[redirects]]
+  from = "/personal-trainer-for-weight-loss-uk-fitnessbyksr"
+  to = "/results"
   status = 301
