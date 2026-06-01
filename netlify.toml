@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "http://fitnessbyksr.co.uk/*"
+  to = "https://www.fitnessbyksr.co.uk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.fitnessbyksr.co.uk/*"
+  to = "https://www.fitnessbyksr.co.uk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://fitnessbyksr.co.uk/*"
+  to = "https://www.fitnessbyksr.co.uk/:splat"
+  status = 301
+  force = true
