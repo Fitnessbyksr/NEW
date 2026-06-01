@@ -15,3 +15,23 @@
   to = "https://www.fitnessbyksr.co.uk/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/faqs"
+  to = "/faq.html"
+  status = 301
+
+[[redirects]]
+  from = "/blog/why-you-should-train-with-a-personal-trainer-while-taking-mounjaro-or-ozempic-for-weight-loss"
+  to = "/blog-glp1.html"
+  status = 301
