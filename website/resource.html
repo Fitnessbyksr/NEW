@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Resource | FitnessbyKSR — Kallum Rolfe</title>
+  <meta name="description" content="A free resource from Kallum Rolfe, personal trainer in Denton, Manchester. Honest fitness advice for real people.">
+  <link rel="canonical" href="https://fitnessbyksr.com/resource">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .resource-hero {
+      background: linear-gradient(135deg, #001f5c 0%, #004AAD 60%, #003080 100%);
+      padding: 3.5rem 0 3rem;
+      color: white;
+    }
+    .resource-hero h1 { color: white; font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 0.75rem; }
+    .resource-hero p { color: rgba(255,255,255,0.8); max-width: 580px; }
+    .resource-hero-inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .resource-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+    .btn-white {
+      background: white;
+      color: #004AAD;
+      font-weight: 700;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      transition: opacity 0.15s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-white:hover { opacity: 0.9; }
+    .btn-outline-white {
+      background: transparent;
+      color: white;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      border: 2px solid rgba(255,255,255,0.5);
+      transition: border-color 0.15s;
+    }
+    .btn-outline-white:hover { border-color: white; }
+
+    /* PDF viewer section */
+    .pdf-section {
+      background: #f0f2f5;
+      padding: 2.5rem 0 3rem;
+    }
+    .pdf-wrapper {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      overflow: hidden;
+    }
+    .pdf-embed {
+      width: 100%;
+      height: 82vh;
+      min-height: 520px;
+      display: block;
+      border: none;
+    }
+    .pdf-fallback {
+      display: none;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .pdf-fallback p { color: var(--text-muted); margin-bottom: 1.5rem; }
+    /* Show fallback if object fails */
+    object:not([data]) + .pdf-fallback,
+    object[data=""] + .pdf-fallback { display: block; }
+
+    /* Mobile tweak */
+    @media (max-width: 640px) {
+      .resource-hero-inner { flex-direction: column; align-items: flex-start; }
+      .pdf-embed { height: 70vh; min-height: 420px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo" aria-label="FitnessbyKSR home">
+        <svg class="logo-badge" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="40" height="40" rx="8" fill="#004AAD"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-weight="800" font-size="12">KSR</text>
+        </svg>
+        <span class="logo-text"><span class="fitnessby">Fitnessby</span><span class="ksr">KSR</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="free-guide.html" class="btn btn-primary nav-cta">Free 5-Day Guide</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu hidden" role="menu">
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="free-guide.html" class="btn btn-primary">Free 5-Day Guide</a>
+  </div>
+</nav>
+
+<!-- ── RESOURCE HERO ── -->
+<section class="resource-hero" aria-label="Resource header">
+  <div class="container">
+    <div class="resource-hero-inner">
+      <div>
+        <div class="hero-tag" style="background:rgba(255,255,255,0.15);color:white;border-color:transparent;margin-bottom:1rem;">
+          Free · From Kallum at FitnessbyKSR
+        </div>
+        <h1 id="doc-title">Your Free Resource</h1>
+        <p id="doc-description">Read it below, or download a copy to keep.</p>
+      </div>
+      <div class="resource-actions">
+        <a href="documents/guide.pdf" download class="btn-white" id="download-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download PDF
+        </a>
+        <a href="contact.html" class="btn-outline-white">Book a free chat →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PDF VIEWER ── -->
+<section class="pdf-section" aria-label="Document viewer">
+  <div class="container">
+    <div class="pdf-wrapper">
+      <object
+        data="documents/guide.pdf"
+        type="application/pdf"
+        class="pdf-embed"
+        aria-label="PDF document viewer"
+        title="Free resource from FitnessbyKSR"
+      >
+        <div class="pdf-fallback">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#004AAD" stroke-width="1.5" style="margin:0 auto 1rem;display:block;"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <p>Your browser can't display PDFs inline — no bother.</p>
+          <a href="documents/guide.pdf" download class="btn btn-primary">Download the guide</a>
+        </div>
+      </object>
+    </div>
+  </div>
+</section>
+
+<!-- ── SOFT CTA ── -->
+<section class="section" style="background:white;padding:3rem 0 3.5rem;">
+  <div class="container text-center" style="max-width:640px;">
+    <h2 style="font-size:clamp(1.3rem,3vw,1.9rem);margin-bottom:0.75rem;">Want to take the next step?</h2>
+    <p style="color:var(--text-muted);margin-bottom:2rem;">A free 20-minute chat with Kallum — no exercise involved, no commitment. Just a conversation to see if it makes sense.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn btn-primary">Book a free consultation</a>
+      <a href="free-guide.html" class="btn btn-outline">Get the free 5-day guide</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">
+          <svg class="logo-badge" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#004AAD"/>
+            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Inter,sans-serif" font-weight="800" font-size="12">KSR</text>
+          </svg>
+          <span class="logo-text"><span class="fitnessby">Fitnessby</span><span class="ksr">KSR</span></span>
+        </a>
+        <p>Honest fitness from a Manchester PT who's been where you are.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Kallum</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Free resources</h4>
+        <ul class="footer-links">
+          <li><a href="free-guide.html">5 Days to Not Hating the Gym</a></li>
+          <li><a href="blog-gym-anxiety.html">Gym Anxiety Guide</a></li>
+          <li><a href="resource.html">Free Resource</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Book a free consultation</a></li>
+          <li><a href="mailto:kallum@fitnessbyksr.com">kallum@fitnessbyksr.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 FitnessbyKSR. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
