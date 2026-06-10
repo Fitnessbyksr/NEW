@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=guide.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Resource | FitnessbyKSR — Kallum Rolfe</title>
-  <meta name="description" content="A free resource from Kallum Rolfe, personal trainer in Denton, Manchester. Honest fitness advice for real people.">
-  <link rel="canonical" href="https://fitnessbyksr.com/resource">
+  <title>The 3 Exercise Challenge — Free Guide | FitnessbyKSR</title>
+  <meta name="description" content="You don't need a 15-exercise plan. You need 3. One squat, one push, one pull. Free guide from Kallum Rolfe, personal trainer in Denton, Manchester.">
+  <link rel="canonical" href="https://fitnessbyksr.com/guide">
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .resource-hero {
@@ -42,10 +41,8 @@
       gap: 0.5rem;
       font-size: 0.95rem;
       transition: opacity 0.15s;
-      border: none;
-      cursor: pointer;
     }
-    .btn-white:hover { opacity: 0.9; }
+    .btn-white:hover { opacity: 0.88; }
     .btn-outline-white {
       background: transparent;
       color: white;
@@ -61,8 +58,6 @@
       transition: border-color 0.15s;
     }
     .btn-outline-white:hover { border-color: white; }
-
-    /* PDF viewer section */
     .pdf-section {
       background: #f0f2f5;
       padding: 2.5rem 0 3rem;
@@ -81,16 +76,10 @@
       border: none;
     }
     .pdf-fallback {
-      display: none;
       padding: 3rem 2rem;
       text-align: center;
     }
     .pdf-fallback p { color: var(--text-muted); margin-bottom: 1.5rem; }
-    /* Show fallback if object fails */
-    object:not([data]) + .pdf-fallback,
-    object[data=""] + .pdf-fallback { display: block; }
-
-    /* Mobile tweak */
     @media (max-width: 640px) {
       .resource-hero-inner { flex-direction: column; align-items: flex-start; }
       .pdf-embed { height: 70vh; min-height: 420px; }
@@ -131,19 +120,19 @@
   </div>
 </nav>
 
-<!-- ── RESOURCE HERO ── -->
-<section class="resource-hero" aria-label="Resource header">
+<!-- ── HERO ── -->
+<section class="resource-hero" aria-label="Guide header">
   <div class="container">
     <div class="resource-hero-inner">
       <div>
         <div class="hero-tag" style="background:rgba(255,255,255,0.15);color:white;border-color:transparent;margin-bottom:1rem;">
           Free · From Kallum at FitnessbyKSR
         </div>
-        <h1 id="doc-title">Your Free Resource</h1>
-        <p id="doc-description">Read it below, or download a copy to keep.</p>
+        <h1>The 3 Exercise Challenge</h1>
+        <p>You don't need a 15-exercise plan. You need 3. One squat, one push, one pull — read it below or grab a copy to keep.</p>
       </div>
       <div class="resource-actions">
-        <a href="documents/guide.pdf" download class="btn-white" id="download-btn">
+        <a href="documents/3-exercise-guide.pdf" download="The-3-Exercise-Challenge-FitnessbyKSR.pdf" class="btn-white">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Download PDF
         </a>
@@ -158,16 +147,16 @@
   <div class="container">
     <div class="pdf-wrapper">
       <object
-        data="documents/guide.pdf"
+        data="documents/3-exercise-guide.pdf"
         type="application/pdf"
         class="pdf-embed"
-        aria-label="PDF document viewer"
-        title="Free resource from FitnessbyKSR"
+        aria-label="The 3 Exercise Challenge PDF"
+        title="The 3 Exercise Challenge — FitnessbyKSR"
       >
         <div class="pdf-fallback">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#004AAD" stroke-width="1.5" style="margin:0 auto 1rem;display:block;"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           <p>Your browser can't display PDFs inline — no bother.</p>
-          <a href="documents/guide.pdf" download class="btn btn-primary">Download the guide</a>
+          <a href="documents/3-exercise-guide.pdf" download="The-3-Exercise-Challenge-FitnessbyKSR.pdf" class="btn btn-primary">Download the guide</a>
         </div>
       </object>
     </div>
@@ -177,8 +166,8 @@
 <!-- ── SOFT CTA ── -->
 <section class="section" style="background:white;padding:3rem 0 3.5rem;">
   <div class="container text-center" style="max-width:640px;">
-    <h2 style="font-size:clamp(1.3rem,3vw,1.9rem);margin-bottom:0.75rem;">Want to take the next step?</h2>
-    <p style="color:var(--text-muted);margin-bottom:2rem;">A free 20-minute chat with Kallum — no exercise involved, no commitment. Just a conversation to see if it makes sense.</p>
+    <h2 style="font-size:clamp(1.3rem,3vw,1.9rem);margin-bottom:0.75rem;">Want a hand getting started?</h2>
+    <p style="color:var(--text-muted);margin-bottom:2rem;">If you're new to the gym, nervous about it, or coming back after a long break — this is exactly who I work with. Book a free chat and we'll figure it out together.</p>
     <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
       <a href="contact.html" class="btn btn-primary">Book a free consultation</a>
       <a href="free-guide.html" class="btn btn-outline">Get the free 5-day guide</a>
@@ -214,8 +203,8 @@
         <h4>Free resources</h4>
         <ul class="footer-links">
           <li><a href="free-guide.html">5 Days to Not Hating the Gym</a></li>
+          <li><a href="guide.html">The 3 Exercise Challenge</a></li>
           <li><a href="blog-gym-anxiety.html">Gym Anxiety Guide</a></li>
-          <li><a href="resource.html">Free Resource</a></li>
         </ul>
       </div>
       <div>
